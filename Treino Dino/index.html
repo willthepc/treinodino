@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Planilha de Treino</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .treino-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .dia-treino {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 25px;
+            width: 300px;
+            box-sizing: border-box;
+            transition: transform 0.2s ease-in-out;
+        }
+        .dia-treino:hover {
+            transform: translateY(-5px);
+        }
+        h2 {
+            color: #0056b3;
+            margin-top: 0;
+            margin-bottom: 15px;
+            text-align: center;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 10px;
+        }
+        h3 {
+            color: #555;
+            margin-top: 0;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        .exercicio-item {
+            position: relative;
+            background-color: #e9f5ff;
+            border: 1px solid #cce7ff;
+            margin-bottom: 10px;
+            padding: 12px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.2s ease-in-out;
+            font-weight: bold;
+        }
+        .exercicio-item:hover {
+            background-color: #d0e7ff;
+        }
+        .exercicio-detalhes {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background-color: #0056b3;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 0 0 5px 5px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 10;
+            font-size: 0.9em;
+            font-weight: normal;
+            line-height: 1.4;
+            white-space: normal; /* Permite que o texto quebre linha */
+        }
+        .exercicio-item:hover .exercicio-detalhes {
+            display: block;
+        }
+        .carga-placeholder {
+            font-size: 0.8em;
+            color: #666;
+            margin-top: 5px;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Minha Planilha de Treino Semanal</h1>
+
+    <div class="treino-container">
+        <div class="dia-treino">
+            <h2>SEGUNDA</h2>
+            <h3>Peito e Ombros</h3>
+            <ul>
+                <li class="exercicio-item">
+                    Voador
+                    <div class="exercicio-detalhes">10x10 GVT (Descanso 30s)</div>
+                </li>
+                <li class="exercicio-item">
+                    Supino Inclinado (Halteres)
+                    <div class="exercicio-detalhes">5x 8-10 (Cluster 5x3 na última série)</div>
+                </li>
+                <li class="exercicio-item">
+                    Fly Crossover
+                    <div class="exercicio-detalhes">5x 8-10 (Cluster 4x4 na última série)</div>
+                </li>
+                <li class="exercicio-item">
+                    Flexão de Braço
+                    <div class="exercicio-detalhes">5x10</div>
+                </li>
+                <li class="exercicio-item">
+                    Desenvolvimento (Smith)
+                    <div class="exercicio-detalhes">4x 8-10</div>
+                </li>
+                <li class="exercicio-item">
+                    Elevação Lateral
+                    <div class="exercicio-detalhes">4x 8-10</div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="dia-treino">
+            <h2>TERÇA</h2>
+            <h3>Costas, Abs e Trapézio</h3>
+            <ul>
+                <li class="exercicio-item">
+                    Pulley Alto
+                    <div class="exercicio-detalhes">10x10 GVT (Descanso 30s)</div>
+                </li>
+                <li class="exercicio-item">
+                    Meio Terra
+                    <div class="exercicio-detalhes">4x 6-8</div>
+                </li>
+                <li class="exercicio-item">
+                    Remada Baixa (Triângulo)
+                    <div class="exercicio-detalhes">5x 10-12</div>
+                </li>
+                <li class="exercicio-item">
+                    Remada Articulada (Pronada)
+                    <div class="exercicio-detalhes">5x 6-8</div>
+                </li>
+                <li class="exercicio-item">
+                    Remada Curvada (Barra)
+                    <div class="exercicio-detalhes">5x 8-10</div>
+                </li>
+                <li class="exercicio-item">
+                    Serrote
+                    <div class="exercicio-detalhes">3x10</div>
+                </li>
+                <li class="exercicio-item">
+                    Encolhimento
+                    <div class="exercicio-detalhes">3x 10-15</div>
+                </li>
+                <li class="exercicio-item">
+                    Abdominal
+                    <div class="exercicio-detalhes">6x 6-8</div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="dia-treino">
+            <h2>QUARTA</h2>
+            <h3>Pernas</h3>
+            <ul>
+                <li class="exercicio-item">
+                    Cadeira Extensora
+                    <div class="exercicio-detalhes">10x10 GVT (Descanso 30s)</div>
+                </li>
+                <li class="exercicio-item">
+                    Agachamento Livre
+                    <div class="exercicio-detalhes">5x 6-10</div>
+                </li>
+                <li class="exercicio-item">
+                    Leg Press
+                    <div class="exercicio-detalhes">5x (4+4+4+4) Cluster Sets</div>
+                </li>
+                <li class="exercicio-item">
+                    Hack
+                    <div class="exercicio-detalhes">3x 10-12</div>
+                </li>
+                <li class="exercicio-item">
+                    Stiff
+                    <div class="exercicio-detalhes">5x 10-12 (Controlar excêntrica 4s)</div>
+                </li>
+                <li class="exercicio-item">
+                    Cadeira Flexora
+                    <div class="exercicio-detalhes">4x 10-12 (Pico de contração 2s)</div>
+                </li>
+                <li class="exercicio-item">
+                    Elevação Pélvica
+                    <div class="exercicio-detalhes">5x 8-10 (Pico de contração 2s)</div>
+                </li>
+                <li class="exercicio-item">
+                    Panturrilha em Pé
+                    <div class="exercicio-detalhes">6x 6-8</div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="dia-treino">
+            <h2>QUINTA</h2>
+            <h3>Peito e Ombros</h3>
+            <ul>
+                <li class="exercicio-item">
+                    Voador
+                    <div class="exercicio-detalhes">4x 8-10</div>
+                </li>
+                <li class="exercicio-item">
+                    Supino Reto
+                    <div class="exercicio-detalhes">4x 7-9</div>
+                </li>
+                <li class="exercicio-item">
+                    Fly Crossover
+                    <div class="exercicio-detalhes">4x 8-10</div>
+                </li>
+                <li class="exercicio-item">
+                    Desenvolvimento (Smith)
+                    <div class="exercicio-detalhes">5x10 (Controlar excêntrica 4s)</div>
+                </li>
+                <li class="exercicio-item">
+                    Elevação Frontal
+                    <div class="exercicio-detalhes">5x 10-12</div>
+                </li>
+                <li class="exercicio-item">
+                    Elevação Lateral (FST-7)
+                    <div class="exercicio-detalhes">7 séries (30 segundos de descanso)</div>
+                </li>
+                <li class="exercicio-item">
+                    Crucifixo Inverso
+                    <div class="exercicio-detalhes">5x 8-10 (Rest Pause de 10s em todas as séries)</div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="dia-treino">
+            <h2>SEXTA</h2>
+            <h3>Bíceps, Tríceps, Abs e Antebraço</h3>
+            <ul>
+                <li class="exercicio-item">
+                    Tríceps Barra Reta
+                    <div class="exercicio-detalhes">4x 10-12 (Rest Pause de 10s em todas as séries)</div>
+                </li>
+                <li class="exercicio-item">
+                    Tríceps Francês
+                    <div class="exercicio-detalhes">4x 10-12 (Rest Pause de 10s em todas as séries)</div>
+                </li>
+                <li class="exercicio-item">
+                    Coice
+                    <div class="exercicio-detalhes">4x (3+3+3+3) Séries em Cluster de 4x3 reps</div>
+                </li>
+                <li class="exercicio-item">
+                    Rosca Scott
+                    <div class="exercicio-detalhes">4x 10-12</div>
+                </li>
+                <li class="exercicio-item">
+                    Rosca Alternada
+                    <div class="exercicio-detalhes">4x12</div>
+                </li>
+                <li class="exercicio-item">
+                    Rosca Simultânea na Polia
+                    <div class="exercicio-detalhes">4x 10-12</div>
+                </li>
+                <li class="exercicio-item">
+                    Rosca Invertida
+                    <div class="exercicio-detalhes">4x 8-10 (Controlar excêntrica por 4s)</div>
+                </li>
+                <li class="exercicio-item">
+                    Abdominal Infra
+                    <div class="exercicio-detalhes">6x 8-10</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
