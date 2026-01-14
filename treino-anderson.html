@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treino Anderson - Completo</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .voltar {
+            display: inline-block;
+            margin-bottom: 20px;
+            text-decoration: none;
+            color: #28a745;
+            font-weight: bold;
+            background: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .treino-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .dia-treino {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 25px;
+            width: 300px;
+            box-sizing: border-box;
+            transition: transform 0.2s ease-in-out;
+        }
+        .dia-treino:hover {
+            transform: translateY(-5px);
+        }
+        h2 {
+            color: #28a745;
+            margin-top: 0;
+            margin-bottom: 15px;
+            text-align: center;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 10px;
+        }
+        h3 {
+            color: #555;
+            margin-top: 0;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        .exercicio-item {
+            position: relative;
+            background-color: #f0fff4;
+            border: 1px solid #c6f6d5;
+            margin-bottom: 10px;
+            padding: 12px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.2s ease-in-out;
+            font-weight: bold;
+        }
+        .exercicio-item:hover {
+            background-color: #d7fbe3;
+        }
+        .exercicio-detalhes {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background-color: #28a745;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 0 0 5px 5px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 10;
+            font-size: 0.9em;
+            font-weight: normal;
+            line-height: 1.4;
+            white-space: normal;
+        }
+        .exercicio-item:hover .exercicio-detalhes {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="index.html" class="voltar">← Voltar ao Menu</a>
+
+    <h1 style="text-align: center;">Minha Planilha de Treino Semanal (Anderson)</h1>
+
+    <div class="treino-container">
+        
+        <div class="dia-treino">
+            <h2>SEGUNDA</h2>
+            <h3>Costa e Posterior</h3>
+            <ul>
+                <li class="exercicio-item">Corda na polia (Drop) <div class="exercicio-detalhes">4*7 + posterior de ombro</div></li>
+                <li class="exercicio-item">Levantamento Terra <div class="exercicio-detalhes">4 * 10</div></li>
+                <li class="exercicio-item">Pulley com triângulo <div class="exercicio-detalhes">3 * 10 (Aumentando o peso)</div></li>
+                <li class="exercicio-item">Pulley com barra maior <div class="exercicio-detalhes">4 * 10</div></li>
+                <li class="exercicio-item">Extensão de lombar <div class="exercicio-detalhes">3 * 12</div></li>
+                <li class="exercicio-item">Remada articulada <div class="exercicio-detalhes">4 * 10 / 4 * 7</div></li>
+                <li class="exercicio-item">Peck deck inversor <div class="exercicio-detalhes">4 * 10 (Posterior de ombro)</div></li>
+                <li class="exercicio-item">Manguito alto <div class="exercicio-detalhes">4 * 12</div></li>
+                <li class="exercicio-item">Crucifixo inverso <div class="exercicio-detalhes">4 * 12</div></li>
+            </ul>
+        </div>
+
+        <div class="dia-treino">
+            <h2>TERÇA</h2>
+            <h3>Peito e Ombro</h3>
+            <ul>
+                <li class="exercicio-item">Supino <div class="exercicio-detalhes">4 * 12</div></li>
+                <li class="exercicio-item">Supino inclinado <div class="exercicio-detalhes">4 * 12</div></li>
+                <li class="exercicio-item">Peck Deck <div class="exercicio-detalhes">5 * 12</div></li>
+                <li class="exercicio-item">Articulado <div class="exercicio-detalhes">3 * 12</div></li>
+                <li class="exercicio-item">Peck deck voador <div class="exercicio-detalhes">3 * 12</div></li>
+                <li class="exercicio-item">Crossover com flexão <div class="exercicio-detalhes">4 * 12</div></li>
+                <li class="exercicio-item">Elevação lateral (Drop) <div class="exercicio-detalhes">4 * 12</div></li>
+                <li class="exercicio-item">Elevação frontal (Halteres) <div class="exercicio-detalhes">4 * 12</div></li>
+                <li class="exercicio-item">Desenvolvimento militar <div class="exercicio-detalhes">3 * 12</div></li>
+                <li class="exercicio-item">Arnold na máquina (Drop) <div class="exercicio-detalhes">4 * 12</div></li>
+            </ul>
+        </div>
+
+        <div class="dia-treino">
+            <h2>QUARTA</h2>
+            <h3>Braço e Tríceps</h3>
+            <ul>
+                <li class="exercicio-item">Bíceps na máquina <div class="exercicio-detalhes">4 * 12</div></li>
+                <li class="exercicio-item">Bíceps na polia <div class="exercicio-detalhes">4 * 12</div></li>
+                <li class="exercicio-item">Bíceps barra (Isometria) <div class="exercicio-detalhes">4 * 12</div></li>
+                <li class="exercicio-item">Tríceps na máquina <div class="exercicio-detalhes">4 * 12</div></li>
+                <li class="exercicio-item">Tríceps testa <div class="exercicio-detalhes">4 * 12</div></li>
+                <li class="exercicio-item">Tríceps barra / inverso <div class="exercicio-detalhes">4 * 12</div></li>
+                <li class="exercicio-item">Tríceps na corda <div class="exercicio-detalhes">4 * 12</div></li>
+            </ul>
+        </div>
+
+        <div class="dia-treino">
+            <h2>QUINTA</h2>
+            <h3>Perna e Posterior</h3>
+            <ul>
+                <li class="exercicio-item">Agachamento <div class="exercicio-detalhes">5 * 8</div></li>
+                <li class="exercicio-item">Leg press <div class="exercicio-detalhes">5 * 8</div></li>
+                <li class="exercicio-item">Cadeira extensora <div class="exercicio-detalhes">3 * 8</div></li>
+                <li class="exercicio-item">Mesa flexora (Drop) <div class="exercicio-detalhes">3 * 7</div></li>
+                <li class="exercicio-item">Cadeira flexora <div class="exercicio-detalhes">3 * 8</div></li>
+                <li class="exercicio-item">Sumô <div class="exercicio-detalhes">3 * 8</div></li>
+                <li class="exercicio-item">Shirt (Stiff) <div class="exercicio-detalhes">3 * 8</div></li>
+                <li class="exercicio-item">Panturrilha sentado <div class="exercicio-detalhes">5 * 30</div></li>
+            </ul>
+        </div>
+
+    </div>
+
+</body>
+</html>
